@@ -25,11 +25,11 @@ public class Minge {
         if (this.y == 0 || this.y == 50) {
             throw new OutException("Mingea este in out la pozitia (" + this.x + ", " + this.y + ").");
         }
-        if ((this.x == 0 || this.x == 100) && (this.y >= 20 || this.y <= 30)) {
-            throw new OutException("Mingea este in gol la pozitia (" + this.x + ", " + this.y + ").");
+        if ((this.x == 0 || this.x == 100) && (this.y >= 20 && this.y <= 30)) {
+            throw new GolException("Mingea este in gol la pozitia (" + this.x + ", " + this.y + ").");
         }
         if (this.x == 0 || this.x == 100) {
-            throw new OutException("Mingea este in corner la pozitia (" + this.x + ", " + this.y + ").");
+            throw new CornerException("Mingea este in corner la pozitia (" + this.x + ", " + this.y + ").");
         }
     }
 }
