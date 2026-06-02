@@ -64,7 +64,7 @@ public class Joc {
 
     @Override
     public String toString() {
-        return "Meci: " + echipa1 + "vs" + echipa2 + "\n" +
+        return "Meci: " + echipa1 + " vs " + echipa2 + "\n" +
                 "Scor final:" + goluriEchipa1 + " - " + goluriEchipa2 + "\n" +
                 "Cornere: " + totalCornere + "\n" +
                 "Out-uri: " + totalOuturi;
